@@ -8,6 +8,6 @@ import { CardInterface } from '../card-interface';
 })
 export class CardComponent {
 
-  @Input() card! : CardInterface;
+  @Input() card! : CardInterface;  //trae los datos de app component (padre)
 
 }

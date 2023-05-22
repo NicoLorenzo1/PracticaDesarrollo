@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CardComponent } from './card/card.component';
 import { CardInterface } from './card-interface';
+import { CarsService } from './cars.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,38 +9,8 @@ import { CardInterface } from './card-interface';
 })
 export class AppComponent {
   title = 'CarProject';
-
-  cards: Array<CardInterface> = [
-    {
-      imgURL: "https://fotos.perfil.com/2020/01/08/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg",
-      model: "vision-s",
-      description: "electrico",
-      type: "Auto"
-    },
-    {
-      imgURL: "https://fotos.perfil.com/2020/01/08/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg",
-      model: "vision-s",
-      description: "electrico",
-      type: "Auto"
-    },
-    {
-      imgURL: "https://fotos.perfil.com/2020/01/08/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg",
-      model: "vision-s",
-      description: "electrico",
-      type: "Auto"
-    },
-    {
-      imgURL: "https://fotos.perfil.com/2020/01/08/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg",
-      model: "vision-s",
-      description: "electrico",
-      type: "Auto"
-    },
-    {
-      imgURL: "https://fotos.perfil.com/2020/01/08/con-el-vision-s-sony-incursiona-en-el-mundo-de-los-autos-853254.jpg",
-      model: "vision-s",
-      description: "electrico",
-      type: "Auto"
-    }
-  ];
-  
+  cars : Array<CardInterface> = [];
+  constructor(private carsService : CarsService){
+    carsService.getCars().then(cars => {this.cars = cars});
+  }
 }
