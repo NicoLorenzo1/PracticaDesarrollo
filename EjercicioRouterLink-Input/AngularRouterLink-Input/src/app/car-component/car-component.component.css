@@ -39,3 +39,12 @@
 .typeClass {
     margin-top: 10px;
 }
+
+.cardBox input[type="text"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: transparent;
+    color: #090909;
+    outline: none;
+}

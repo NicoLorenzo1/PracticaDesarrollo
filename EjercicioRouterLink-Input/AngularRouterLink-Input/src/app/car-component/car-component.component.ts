@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CarInterface } from '../car-interface';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-car-component',
@@ -9,4 +10,10 @@ import { CarInterface } from '../car-interface';
 export class CarComponentComponent {
   @Input() car! : CarInterface;
 
+  inputValue: string = "";
+
+  saveInputModel()
+  {
+    this.car.model = this.inputValue;
+  }
 }

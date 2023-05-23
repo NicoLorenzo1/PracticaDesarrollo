@@ -8,7 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { CarContainerComponent } from './car-container/car-container.component';
 import { ZoomCarComponentComponent } from './zoom-car-component/zoom-car-component.component';
-
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { ZoomCarComponentComponent } from './zoom-car-component/zoom-car-compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
