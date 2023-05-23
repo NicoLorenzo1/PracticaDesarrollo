@@ -1,0 +1,9 @@
+<section class="generalSeccion">
+    <div class="cardBox">
+        <img class="imgClass" [src]="this.car.imgURL">
+        <h2 class="modelClass">{{this.car.model}}</h2>
+        <p class="descriptionClass">{{this.car.description}}</p>
+        <p class=" typeClass">{{this.car.type}}</p>
+        <button [routerLink]="['zoomCar', car.imgURL, car.model, car.description, car.type]">zoomCar</button>
+    </div>
+</section>

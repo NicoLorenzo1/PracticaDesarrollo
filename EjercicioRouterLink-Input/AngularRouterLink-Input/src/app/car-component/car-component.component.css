@@ -1,0 +1,41 @@
+.generalSeccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    margin-top: 5px;
+    border: 2px solid #090909;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.cardBox:hover {
+    transform: scale(1.1);
+}
+
+.imgClass {
+    width: 100%;
+    height: auto;
+}
+
+.modelClass {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.descriptionClass {
+    margin-top: 10px;
+}
+
+.typeClass {
+    margin-top: 10px;
+}
