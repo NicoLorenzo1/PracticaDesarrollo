@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarComponent } from './car/car.component';
-import { RouterModule } from '@angular/router';
-import { CarTargetComponent } from './car-target/car-target.component';
+import { CarComponentComponent } from './car-component/car-component.component';
+import { ZoomCarComponent } from './zoom-car/zoom-car.component';
+import { HomeComponent } from './home/home.component';
+import { PruebaComponent } from './prueba/prueba.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarComponent,
-    CarTargetComponent
+    CarComponentComponent,
+    ZoomCarComponent,
+    HomeComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
