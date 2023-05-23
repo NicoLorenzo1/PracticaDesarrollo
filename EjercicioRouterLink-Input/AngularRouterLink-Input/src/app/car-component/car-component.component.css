@@ -1,21 +1,25 @@
 .generalSeccion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 25%;
     float: left;
+    margin-top: 0;
+    padding-top: 0;
+    margin: 2%;
+    margin-left: 5%;
 }
 
 .cardBox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    margin: 50px;
-    padding: 20px;
-    margin-top: 5px;
+    width: 100%;
+    margin: 2%;
+    padding: 2%;
+    margin-top: 1%;
     border: 2px solid #090909;
-    border-radius: 20px;
+    border-radius: 2%;
     transition: transform 0.3s ease;
+    height: 32em;
+    
 }
 
 .cardBox:hover {
@@ -24,26 +28,28 @@
 
 .imgClass {
     width: 100%;
-    height: auto;
+    height: 10em;
 }
 
 .modelClass {
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.5em;
+    margin-top: 1em;
+    border: 2px solid red;
+
 }
 
 .descriptionClass {
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 .typeClass {
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 .cardBox input[type="text"] {
     width: 100%;
-    margin-top: 10px;
-    padding: 5px;
+    margin-top: 1em;
+    padding: 0.5em;
     background-color: transparent;
     color: #090909;
     outline: none;

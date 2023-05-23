@@ -1,0 +1,29 @@
+.generalDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.IndividualCar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #090909;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.IndividualCar:hover {
+    transform: scale(1.1);
+}
+
+.IndividualCar img {
+    width: 100%;
+    height: auto;
+}
+
+.IndividualCar h2,
+.IndividualCar h3 {
+    margin-top: 10px;
+}
