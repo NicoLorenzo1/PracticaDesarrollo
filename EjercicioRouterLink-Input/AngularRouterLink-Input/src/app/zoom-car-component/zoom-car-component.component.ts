@@ -21,5 +21,5 @@ export class ZoomCarComponentComponent implements OnInit {
     this.model = this.route.snapshot.paramMap.get('model');
     this.description = this.route.snapshot.paramMap.get('description');
     this.type = this.route.snapshot.paramMap.get('type');
-}
+  }
 }

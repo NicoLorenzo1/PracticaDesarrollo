@@ -8,12 +8,11 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./car-component.component.css']
 })
 export class CarComponentComponent {
-  @Input() car! : CarInterface;
+  @Input() car!: CarInterface;
 
   inputValue: string = "";
 
-  saveInputModel()
-  {
+  saveInputModel() {
     this.car.model = this.inputValue;
   }
 }

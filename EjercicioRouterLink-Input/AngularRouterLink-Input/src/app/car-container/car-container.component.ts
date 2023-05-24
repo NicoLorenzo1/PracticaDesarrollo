@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CarInterface } from '../car-interface';
-import { CarServiceService
+import {
+  CarServiceService
 
 } from '../car-service.service';
 @Component({
@@ -9,10 +10,10 @@ import { CarServiceService
   styleUrls: ['./car-container.component.css']
 })
 export class CarContainerComponent {
-  listOfCars : Array<CarInterface> = []
+  listOfCars: Array<CarInterface> = []
 
-  constructor(carService : CarServiceService){ //Creo instancia de carService para poder usar los metodos
-    carService.getCarsOfService().then (carListOfService => {this.listOfCars = carListOfService});
+  constructor(carService: CarServiceService) { //Creo instancia de carService para poder usar los metodos
+    carService.getCarsOfService().then(carListOfService => { this.listOfCars = carListOfService });
   }
-  
+
 }

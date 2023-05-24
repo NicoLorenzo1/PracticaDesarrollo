@@ -1,50 +1,65 @@
 .generalSeccion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 25%;
     float: left;
-}
-
-.cardBox {
+    margin-top: 0;
+    padding-top: 0;
+    margin: 2%;
+    margin-left: 5%;
+  }
+  
+  .cardBox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    margin: 50px;
-    padding: 20px;
-    margin-top: 5px;
+    width: 100%;
+    margin: 2%;
+    padding: 2%;
+    margin-top: 1%;
     border: 2px solid #090909;
-    border-radius: 20px;
+    border-radius: 2%;
     transition: transform 0.3s ease;
-}
-
-.cardBox:hover {
+    height: 32em;
+    overflow: hidden; /* Evita que el contenido desborde */
+  }
+  
+  .cardBox:hover {
     transform: scale(1.1);
-}
-
-.imgClass {
+  }
+  
+  .imgClass {
     width: 100%;
+    height: 10em;
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el espacio sin distorsionarla */
+  }
+  
+  .modelClass {
+    font-size: 1.5em;
+    margin-top: 1em;
+    text-align: center; /* Alinea el texto al centro */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Evita que el texto desborde */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+  }
+  
+  .descriptionClass {
+    margin-top: 0.50em;
+    text-align: center;
+    overflow: auto; /* Habilita el scroll si el texto excede el espacio disponible */
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
     height: auto;
-}
-
-.modelClass {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.descriptionClass {
-    margin-top: 10px;
-}
-
-.typeClass {
-    margin-top: 10px;
-}
-
-.cardBox input[type="text"] {
+  }
+  
+  .typeClass {
+    margin-top: 1em;
+    text-align: center; /* Alinea el texto al centro */
+  }
+  
+  .cardBox input[type="text"] {
     width: 100%;
-    margin-top: 10px;
-    padding: 5px;
+    margin-top: 1em;
+    padding: 0.5em;
     background-color: transparent;
     color: #090909;
     outline: none;
-}
+  }
+  
